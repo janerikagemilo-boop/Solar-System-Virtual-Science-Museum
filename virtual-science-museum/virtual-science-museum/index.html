@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar System Virtual Museum - Advanced 3D Rendering</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="canvas-container"></div>
+
+      <div id="ui-overlay">
+        <div id="progress-bar">
+          <div id="progress-fill"></div>
+        </div>
+
+        <div id="navigation">
+          <button id="prev-btn" class="nav-btn">Previous Planet</button>
+          <button id="next-btn" class="nav-btn">Next Planet</button>
+        </div>
+
+        <div id="exhibit-info">
+          <button id="close-info">×</button>
+          <h2 id="exhibit-title">Solar System Tour</h2>
+          <p id="exhibit-description">
+            Welcome! Experience our solar system with advanced 3D rendering,
+            realistic lighting, and high-performance graphics.
+          </p>
+        </div>
+
+        <div id="current-room">Entrance</div>
+
+        <div id="instructions">
+          Advanced 3D Rendering • Realistic Shadows • High Performance •
+          Professional Graphics Pipeline
+        </div>
+      </div>
+
+      <div id="loading-screen">
+        <h1 id="loading-title">Solar System Virtual Museum</h1>
+        <div id="loading-bar">
+          <div id="loading-progress"></div>
+        </div>
+        <p id="loading-text">Initializing advanced rendering system...</p>
+      </div>
+    </div>
+
+    <!-- Three.js and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.min.js"></script>
+
+    <!-- Our modular application scripts -->
+    <script src="src/js/renderer.js"></script>
+    <script src="src/js/planets.js"></script>
+    <script src="src/js/solar-system.js"></script>
+    <script src="src/js/main.js"></script>
+  </body>
+</html>

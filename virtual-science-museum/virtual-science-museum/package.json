@@ -1,0 +1,15 @@
+{
+  "name": "solar-system-virtual-museum",
+  "version": "3.0.0",
+  "description": "Interactive 3D Solar System Museum with GLB Planet Models",
+  "main": "src/js/main.js",
+  "scripts": {
+    "start": "npx serve . -p 3000",
+    "dev": "npx live-server . --port=3000",
+    "build": "echo 'Solar System Museum with GLB Models Build Complete'",
+    "download-models": "./download-sample-models.sh"
+  },
+  "keywords": ["three.js", "3d", "solar-system", "glb", "planets", "3d-models", "interactive"],
+  "author": "Your Name",
+  "license": "MIT"
+}
